@@ -1,0 +1,12 @@
+@import '../../scss/vars';
+
+.header {
+    &__container {
+
+    }
+
+    &__title {
+        font-size: 40px;
+        font-family: $permanent;
+    }
+}
