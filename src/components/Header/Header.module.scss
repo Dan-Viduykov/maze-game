@@ -6,7 +6,28 @@
     }
 
     &__title {
-        font-size: 40px;
+        text-align: center;
+        font-size: 60px;
         font-family: $permanent;
+        position: relative;
+
+        @media (max-width: 720px) {
+            font-size: 40px;
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            display: block;
+            width: 15%;
+            height: 4px;
+            border-radius: 100px;
+            background-color: $black;
+            position: absolute;
+            top: 50%;
+        }
+
+        &::after { left: 65%;}
+        &::before { right: 65%;}
     }
 }
